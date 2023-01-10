@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background: whitesmoke;
+  border: 1px solid gray;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.square:hover,
+.square:focus {
+  box-shadow: inset 0px 0px 5px gray;
+}
+
+.square:active {
+  box-shadow: inset 0px 0px 15px gray;
+}
+.gamecontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  margin: 0 auto;
+}
